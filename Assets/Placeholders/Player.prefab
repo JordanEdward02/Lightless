@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions: {fileID: -944628639613478452, guid: e121969488c8cf74bb723df75281a22f, type: 3}
-  rigidbody: {fileID: 5725626095423097568}
+  mainRigidbody: {fileID: 5725626095423097568}
   playerTransform: {fileID: 6929519116272584212}
   moveSpeed: 5
   dashDistance: 13
