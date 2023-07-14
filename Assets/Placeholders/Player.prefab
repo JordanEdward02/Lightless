@@ -236,14 +236,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6030084030751008201}
-  m_LocalRotation: {x: 0.3310888, y: 0.35726574, z: -0.13714148, w: 0.86251587}
-  m_LocalPosition: {x: -3, y: 5, z: -3}
+  m_LocalRotation: {x: 0.46193978, y: 0.33141357, z: -0.19134171, w: 0.8001032}
+  m_LocalPosition: {x: -8, y: 20, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1180394625038410778}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 42, y: 45, z: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: 45, z: 0}
 --- !u!20 &4747174920114797224
 Camera:
   m_ObjectHideFlags: 0
@@ -463,7 +463,7 @@ Transform:
   - {fileID: 4502925326765446721}
   - {fileID: 2975750026060323462}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3500380617060310253
 MonoBehaviour:
@@ -481,9 +481,7 @@ MonoBehaviour:
   mainRigidbody: {fileID: 5725626095423097568}
   playerTransform: {fileID: 6929519116272584212}
   moveSpeed: 5
-  dashDistance: 13
-  dashDuration: 0.2
-  dashCooldown: 3
+  immobile: 0
 --- !u!54 &5725626095423097568
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -506,8 +504,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
