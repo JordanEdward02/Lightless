@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class BasicDash :  Dash
 {
-    public float dashDistance = 10f;
-    public float dashDuration = 0.2f;
-    public float dashCooldown = 2f;
+    public float dashDistance = 4f;
+    public float dashDuration = 0.3f;
+    public float dashCooldown = 1.5f;
 
     private PlayerController player;
     
