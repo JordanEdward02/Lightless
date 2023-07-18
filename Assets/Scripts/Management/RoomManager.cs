@@ -7,12 +7,14 @@ public class RoomManager : MonoBehaviour
 
     public Room[] possibleRooms;
 
-    private List<Object> currentRooms;
+    private List<GameObject> currentRooms;
 
     void Start()
     {
-        Object newRoom = Instantiate(possibleRooms[0].roomPrefab);
-        //currentRooms.Add(newRoom);
+        currentRooms = new List<GameObject>();
+        GameObject newRoom = Instantiate(possibleRooms[0].roomPrefab);
+        newRoom.GetComponent<Room>().roomManager = this;
+        currentRooms.Add(newRoom);
     }
     
 
@@ -20,5 +22,10 @@ public class RoomManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void spawnNewRoom(Vector3 position)
+    {
+        Debug.Log(position);
     }
 }

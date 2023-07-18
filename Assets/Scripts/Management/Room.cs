@@ -7,15 +7,10 @@ public class Room : MonoBehaviour
 
     public GameObject roomPrefab;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [HideInInspector] public RoomManager roomManager;
+    [HideInInspector] public bool currentRoom = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void spawnNewRoom(Vector3 position){
+        roomManager.spawnNewRoom(position);
     }
 }
