@@ -27,13 +27,15 @@ public class RoomManager : MonoBehaviour
         currentAngle = Mathf.Round(currentAngle / 90.0f) * 90.0f; // snaps to nearest 90 degrees
 
         // select new door from new room
-        int rand = Random.Range(0,4);
-        Door chosenDoor = possibleRooms[0].doors[rand];
+        int randRoom = Random.Range(0,possibleRooms.Length);
+        Room chosenRoom = possibleRooms[randRoom];
+        int randDoor = Random.Range(0,chosenRoom.doors.Length);
+        Door chosenDoor = possibleRooms[randRoom].doors[randDoor];
         Vector3 newRoomPos = -chosenDoor.transform.localPosition;
         newRoomPos.y = 0f;
 
         // Create new room object
-        GameObject newRoom = Instantiate(possibleRooms[0].roomPrefab);
+        GameObject newRoom = Instantiate(possibleRooms[randRoom].roomPrefab);
 
         // Get angle from new room origin to door
         float newAngle = Mathf.Atan2(chosenDoor.transform.localPosition.x-newRoom.transform.position.x, chosenDoor.transform.localPosition.z-newRoom.transform.position.z)*180 / Mathf.PI;
