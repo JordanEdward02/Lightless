@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
     public Room parentRoom;
 
     private void OnTriggerEnter(Collider other) {
-        parentRoom.spawnNewRoom(transform.localPosition);
+        if (other.tag == "Player")
+            parentRoom.spawnNewRoom(transform.position);
     }
 }

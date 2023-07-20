@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+
+    // Player needs direction movements to be on the mouse or seperate joystick. Add this rotation to be seperate
     
     public InputActionAsset actions;
     public Rigidbody mainRigidbody;
