@@ -19,6 +19,12 @@ public class RoomManager : MonoBehaviour
         currentRooms.Add(newRoom);
     }
 
+
+    /*
+    Spawns a random room with external doors relative to the current room.
+
+    Note: By external doors this means that the doors go towards the centre of the room
+    */
     public void spawnNewRoom(Vector3 currentPosition, Transform currentOrigin)
     {
 

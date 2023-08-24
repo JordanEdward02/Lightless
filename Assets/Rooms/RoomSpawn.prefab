@@ -135,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentRoom: {fileID: 8549164588471854835}
+  doorOrigin: {fileID: 3503925785180458851}
 --- !u!1 &2501164282399233040
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentRoom: {fileID: 8549164588471854835}
+  doorOrigin: {fileID: 3503925785180458851}
 --- !u!1 &4638593651635201203
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentRoom: {fileID: 8549164588471854835}
+  doorOrigin: {fileID: 3503925785180458851}
 --- !u!1 &5955645530739188272
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,7 +1968,6 @@ MonoBehaviour:
   - {fileID: 4380080499450896102}
   - {fileID: 5023762691908480038}
   - {fileID: 3151745949575519119}
-  roomOrigin: {fileID: 3503925785180458851}
   roomManager: {fileID: 0}
   currentRoom: 0
 --- !u!1 &9093403465168826741
@@ -2068,3 +2070,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentRoom: {fileID: 8549164588471854835}
+  doorOrigin: {fileID: 3503925785180458851}
